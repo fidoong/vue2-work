@@ -84,7 +84,8 @@
 }
 
 
-.base-dialog {
+.base-dialog,
+.pop-form {
   .el-form {
     &--inline {
       display: flex;

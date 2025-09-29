@@ -95,6 +95,12 @@ const componentsRouter = {
       component: () => import('@/views/components-demo/drag-kanban'),
       name: 'DragKanbanDemo',
       meta: { title: 'Drag Kanban' }
+    },
+    {
+      path: 'test',
+      component: () => import('@/views/components-demo/test-demo.vue'),
+      name: 'TestDemo',
+      meta: { title: 'Test' }
     }
   ]
 }

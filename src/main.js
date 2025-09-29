@@ -13,7 +13,7 @@ import '@/styles/index.scss' // global css
 import App from './App'
 import store from './store'
 import router from './router'
-
+import createPop from './utils/pop-helper'
 import './icons' // icon
 import './permission' // permission control
 import './utils/error-log' // error log
@@ -51,3 +51,6 @@ new Vue({
   store,
   render: h => h(App)
 })
+
+// 全局挂载，所有组件可通过 this.showPop 调用
+Vue.prototype.$showPop = createPop
